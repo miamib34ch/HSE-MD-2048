@@ -4,7 +4,6 @@ import android.content.Context
 import android.media.MediaPlayer
 
 class Music {
-
     var player: MediaPlayer = MediaPlayer()
     var pathR: Int
     private var volume = 0.5f
