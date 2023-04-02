@@ -12,29 +12,21 @@ import androidx.appcompat.app.AppCompatActivity
 import org.hse.hse_2048.R
 import java.util.*
 
-class SettingsActivity: AppCompatActivity(){
-
+class SettingsActivity: AppCompatActivity() {
     lateinit var preferenceManager: PreferenceManager
+
     var isMusicActive: Boolean
         get() = preferenceManager.getValue("isMusicActive", true)
-        set(value){
-            preferenceManager.saveValue("isMusicActive", value)
-        }
+        set(value) { preferenceManager.saveValue("isMusicActive", value) }
     var language: String?
         get() = preferenceManager.getValue("language", "ru")
-        set(value){
-            preferenceManager.saveValue("language", value)
-        }
+        set(value) { preferenceManager.saveValue("language", value) }
     var nameEdit: String?
         get() = preferenceManager.getValue("name", "Player")
-        set(value){
-            preferenceManager.saveValue("name", value)
-        }
+        set(value) { preferenceManager.saveValue("name", value) }
     var music: Float
         get() = preferenceManager.getValue("volume", 0.5f)
-        set(value){
-            preferenceManager.saveValue("volume", value)
-        }
+        set(value) { preferenceManager.saveValue("volume", value) }
 
     lateinit var music_button: Button
     lateinit var language_button: Button
@@ -48,12 +40,11 @@ class SettingsActivity: AppCompatActivity(){
 
         preferenceManager = PreferenceManager(this)
 
-
         music_button = findViewById(R.id.music_button)
         language_button = findViewById(R.id.language_button)
         name_edit = findViewById(R.id.name_edit)
-        var save_button = findViewById<Button>(R.id.save_button)
         seekBar = findViewById(R.id.seekBar)
+        var save_button = findViewById<Button>(R.id.save_button)
 
         getSettings()
         seekBar.progress = (music * 100).toInt()
@@ -68,9 +59,9 @@ class SettingsActivity: AppCompatActivity(){
                 music = vol
             }
 
-            override fun onStartTrackingTouch(seekBar: SeekBar) {}
+            override fun onStartTrackingTouch(seekBar: SeekBar) { }
 
-            override fun onStopTrackingTouch(seekBar: SeekBar) {}
+            override fun onStopTrackingTouch(seekBar: SeekBar) { }
         })
     }
 
@@ -87,13 +78,14 @@ class SettingsActivity: AppCompatActivity(){
         getSettings()
         recreate()
     }
+    
     private fun onSaveButtonClick(view: View) {
         nameEdit = name_edit.text.toString()
         getSettings()
         Toast.makeText(applicationContext, getString(R.string.saved_message), Toast.LENGTH_SHORT).show();
     }
 
-    fun getSettings(){
+    fun getSettings() {
         if (isMusicActive)
             music_button.text = resources.getString(R.string.music_button_on)
         else
@@ -105,7 +97,7 @@ class SettingsActivity: AppCompatActivity(){
         name_edit.setText(nameEdit)
     }
 
-    fun changeLanguage(languageToLoad: String){
+    fun changeLanguage(languageToLoad: String) {
         val locale = Locale(languageToLoad)
         Locale.setDefault(locale)
         val config = Configuration()
