@@ -7,4 +7,4 @@ The logic of the game - https://github.com/zaktsy
 
 Records and score - https://github.com/andrey545454
 
-I did settings
+Settings - https://github.com/miamib34ch
