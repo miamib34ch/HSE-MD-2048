@@ -78,7 +78,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun onResumeButtonClick(view: View) {
-
         val intent = Intent(this, GameActivity::class.java)
         intent.putExtra("gameRows", gameRows)
         intent.putExtra("newGame", false)
