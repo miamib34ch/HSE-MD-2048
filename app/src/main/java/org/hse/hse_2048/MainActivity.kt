@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun changeLanguage() {
-        val languageToLoad =  preferenceManager.getValue("language", "ru")// your language
+        val languageToLoad =  preferenceManager.getValue("language", "ru")
 
         val locale = Locale(languageToLoad)
         Locale.setDefault(locale)
