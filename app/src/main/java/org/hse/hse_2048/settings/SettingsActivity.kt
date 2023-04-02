@@ -12,7 +12,6 @@ import androidx.appcompat.app.AppCompatActivity
 import org.hse.hse_2048.R
 import java.util.*
 
-
 class SettingsActivity: AppCompatActivity(){
 
     lateinit var preferenceManager: PreferenceManager
