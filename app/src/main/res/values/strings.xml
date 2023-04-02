@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">HSE-MD-2048</string>
+    <string name="start_game">Start Game</string>
+    <string name="lose">You lose</string>
+    <string name="won">You won!</string>
+    <string name="return_in_menu">Return in menu</string>
+
+    <string name="rating_button">Records</string>
+    <string name="resume_game">Resume game</string>
+
+    <string name="settings_button">Settings</string>
+    <string name="language_label">Language</string>
+    <string name="music_label">Music</string>
+    <string name="name_label">Your name</string>
+    <string name="language_button_ru">RU</string>
+    <string name="language_button_en">EN</string>
+    <string name="music_button_on">ON</string>
+    <string name="music_button_off">OFF</string>
+    <string name="save_button">SAVE NAME</string>
+    <string name="saved_message">Name saved</string>
+
+    <string name="table_title_local">Your rating</string>
+</resources>

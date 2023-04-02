@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HSE-2048</string>
+    <string name="start_game">Начать игру</string>
+    <string name="lose">Вы проиграли</string>
+    <string name="won">Вы победили!</string>
+    <string name="return_in_menu">Вернуться в меню</string>
+
+    <string name="rating_button">Рекорды</string>
+    <string name="resume_game">Продолжить игру</string>
+
+    <string name="settings_button">Настройки</string>
+    <string name="language_label">Язык</string>
+    <string name="music_label">Музыка</string>
+    <string name="name_label">Ваше имя</string>
+    <string name="language_button_ru">РУ</string>
+    <string name="language_button_en">АНГЛ</string>
+    <string name="music_button_on">ВКЛ</string>
+    <string name="music_button_off">ВЫКЛ</string>
+    <string name="save_button">СОХРАНИТЬ ИМЯ</string>
+    <string name="saved_message">Имя сохранено</string>
+
+    <string name="table_title_local">Ваш рейтинг</string>
+</resources>
