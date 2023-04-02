@@ -9,7 +9,7 @@ class Music {
     var pathR: Int
     private var volume = 0.5f
 
-    constructor(pathR: Int){
+    constructor(pathR: Int) {
         this.pathR = pathR
     }
 
@@ -19,7 +19,7 @@ class Music {
         player.start()
     }
 
-    fun stopMusic(){
+    fun stopMusic() {
         player.stop()
     }
 
