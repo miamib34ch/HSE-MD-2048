@@ -10,11 +10,9 @@ class SettingsService: SettingsDelegate {
 
     override var isMusicActive: Boolean
         get() = preferenceManager.getValue("isMusicActive", true)
-        set(value){
-            preferenceManager.saveValue("isMusicActive", value)
-        }
+        set(value) { preferenceManager.saveValue("isMusicActive", value) }
 
-    constructor(context: Context){
+    constructor(context: Context) {
         preferenceManager = PreferenceManager(context)
     }
 }
